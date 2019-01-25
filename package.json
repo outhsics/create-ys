@@ -1,13 +1,13 @@
 {
   "name": "create-ys",
-  "version": "0.1.5",
-  "description": "Creates a ysJS application using the command line.",
-  "bin": {
-    "create-ys": "cli.js"
+  "version": "0.9.1",
+  "description": "cli ",
+  "main": "cli.js",
+  "directories": {
+    "lib": "lib"
   },
-  "scripts": {
-    "changelog": "git changelog CHANGELOG.md && git add ./ && git commit -m 'update CHANGELOG.md'",
-    "prepublishOnly": "npm run changelog && np --no-cleanup --yolo --no-publish"
+  "bin": {
+    "create-umi": "cli.js"
   },
   "dependencies": {
     "chalk": "^2.4.1",
@@ -23,20 +23,21 @@
   "devDependencies": {
     "np": "^3.0.4"
   },
-  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/outhsics/create-ys"
+    "url": "git+https://github.com/outhsics/create-ys.git"
   },
-  "homepage": "https://github.com/outhsics/create-ys",
-  "authors": [
-    "outhsics <outhsics@gmail.com> (https://github.com/outhsics/create-ys)"
+  "keywords": [
+    "cli",
+    "create-ys"
   ],
+  "author": "outhsics",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/outhsics/create-ys/issues"
   },
-  "files": [
-    "cli.js",
-    "lib"
-  ]
+  "homepage": "https://github.com/outhsics/create-ys#readme"
 }
