@@ -7,7 +7,7 @@
     "lib": "lib"
   },
   "bin": {
-    "create-umi": "cli.js"
+    "create-ys": "cli.js"
   },
   "dependencies": {
     "chalk": "^2.4.1",
